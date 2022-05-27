@@ -11,7 +11,7 @@
         <div class="card-body">
             <div class="row justify-content-md-center">
                 <div class="col-md-7">
-            <form name ="FormAdd" action="./services/registrar.php" method="post">
+            <form name ="FormAdd" action="../services/registrar.php" method="post">
             <div class="form-group">
     <label for="inputAddress">Nombres</label>
     <input type="text" class="form-control" id="inputdoc" name="nombre" placeholder="Ingrese sus nombres" require>
