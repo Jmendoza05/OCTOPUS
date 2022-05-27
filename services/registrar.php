@@ -10,13 +10,13 @@ if(isset($_POST['bRegistar'])){
    $result = mysqli_query($conn,$validateDocumento);
    if(mysqli_num_rows($result)== 1){
        echo "Usuario Ya Existente";
-       header("Location: ../login.php");
+       header("Location: ../view/login.php");
    }
     echo $fechaCreacion;
     $query = "INSERT INTO `usuarios`(`documento`, `nombre`, `apellidos`, `password`, `fechaRegistro`, `idRol`) 
     VALUES('$documento','$nombre','$apellidos','$password','','$rol')";
     $result = mysqli_query($conn, $query);
-    header("Location: ../login.php");
+    header("Location: ../view/login.php");
    
 }
 
