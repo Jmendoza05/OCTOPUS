@@ -40,7 +40,7 @@ include("../includes/header.php");
                             <td><?php echo $row['documento']?></td>
                             <td><?php echo $row['fechaRegistro']?></td>
                             <td> 
-                                    <a href="edit.php?id=<?php  echo $row['documento'];?>">
+                                    <a href="editarUsuario.php?documento=<?php  echo $row['documento'];?>">
                                         <i class="fas fa-marker"></i>
                                     </a>
                                 </td>
